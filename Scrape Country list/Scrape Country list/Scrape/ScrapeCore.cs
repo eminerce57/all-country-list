@@ -10,7 +10,7 @@ namespace Scrape_Country_list.scrape
         public static List<CountryModel> ScrapeCountry()
         {
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("URLLL");
+            HtmlDocument doc = web.Load("https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/");
 
             var TablePath = "//table[contains(@id,\"example2\")]/tbody";
             var Table = doc.DocumentNode.SelectSingleNode(TablePath);

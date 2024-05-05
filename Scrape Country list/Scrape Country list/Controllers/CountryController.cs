@@ -5,7 +5,7 @@ using Scrape_Country_list.scrape;
 namespace Scrape_Country_list.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CountryController : ControllerBase
     {
     
